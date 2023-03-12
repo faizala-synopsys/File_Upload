@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    container_name: file_upload_vulnerabilities
+    container_name: file_upload
     build:
       context: .
       dockerfile: Dockerfile
@@ -9,4 +9,4 @@ services:
        - ./.docker/000-default.conf:/etc/apache2/sites-available/000-default.conf
     ports:
       - 9001:80
-    image: faizala-synopsys/file_upload_vulnerabilities:latest
+    image: faizala-synopsys/file_upload:latest
