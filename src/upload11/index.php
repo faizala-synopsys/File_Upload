@@ -28,7 +28,7 @@
     </div>
 
     <?php
-    $target_dir = "uploads/";
+    $target_dir = "upload11/";
     
     if(isset($_POST["submit"])) {
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
